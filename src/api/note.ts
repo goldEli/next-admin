@@ -1,7 +1,6 @@
-export async function getAllNotes() {
-  return [
-    {
-      id: "1702459181837",
+const data: TNote[] = [
+  {
+    id: "1702459181837",
       title: "sunt aut",
       content: "quia et suscipit suscipit recusandae",
       updateTime: "2023-12-13T09:19:48.837Z",
@@ -17,11 +16,18 @@ export async function getAllNotes() {
       title: "ea molestias",
       content: "et iusto sed quo iure",
       updateTime: "2023-12-13T09:19:48.837Z",
-    },
-  ];
+  },
+];
+
+export async function getAllNotes() {
+  return data;
 }
 
-export type Note = {
+export async function getNote(noteId: string) {
+  return data.find((note) => note.id === noteId);
+}
+
+export type TNote = {
   id: string;
   title: string;
   content: string;

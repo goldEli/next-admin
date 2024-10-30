@@ -10,14 +10,17 @@
   },
   "dependencies": {
     "dayjs": "^1.11.13",
+    "marked": "^14.1.3",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "sanitize-html": "^2.13.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/sanitize-html": "^2.13.0",
     "eslint": "^8",
     "eslint-config-next": "15.0.2",
     "postcss": "^8",

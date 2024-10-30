@@ -1,13 +1,13 @@
 import dayjs from "dayjs";
 import SidebarNoteItemContent from "@/components/SidebarNoteItemContent";
-import { Note } from "@/api/note";
+import { TNote } from "@/api/note";
 
 export default function SidebarNoteItem({
   noteId,
   note,
 }: {
   noteId: string;
-  note: Note;
+  note: TNote;
 }) {
   const { title, content = "", updateTime } = note;
   return (
